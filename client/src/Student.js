@@ -47,7 +47,7 @@ function Student({ socket, codeBlock }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/getQuestion")
+      .get("live-chat-2qhg.vercel.app/getQuestion")
       .then((questions) => {
         const question = find(questions.data, { id: codeBlock });
         setQuestion(question);
