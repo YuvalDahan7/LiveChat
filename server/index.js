@@ -8,7 +8,7 @@ const QuestionModel = require("./models/Question");
 const { Server } = require("socket.io");
 app.use(cors());
 
-mongoose.connect("mongodb+srv://YuvalDahan:TennisBall1632@cluster0.aqrxafv.mongodb.net/", {dbName: "LiveCoding"})
+mongoose.connect("mongodb+srv://dahan236:1H8NS5vRxvwvobux@cluster0.y8x7eht.mongodb.net/", {dbName: "LiveCoding"})
 const server = http.createServer(app);
 
 app.get('/getQuestion', (req, res) => {
