@@ -4,14 +4,12 @@ import { useState } from "react";
 import Student from "./Student";
 import Mentor from "./Mentor";
 
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("live-chat-2qhg.vercel.app");
 
 function App() {
   const [codeBlock, setCodeBlock] = useState("");
   const [showStudentPage, setShowStudentPage] = useState(false);
   const [showMentorPage, setShowMentorPage] = useState(false);
-
-  let amountUsers = 0;
 
   const joinRoom = () => {
     var numberOfChatButtons =
