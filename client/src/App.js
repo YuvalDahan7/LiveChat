@@ -4,7 +4,7 @@ import { useState } from "react";
 import Student from "./Student";
 import Mentor from "./Mentor";
 
-const socket = io.connect("live-chat-2qhg.vercel.app");
+const socket = io.connect("https://yuvserver-ee7231b1742f.herokuapp.com/");
 
 function App() {
   const [codeBlock, setCodeBlock] = useState("");
